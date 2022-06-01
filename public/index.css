@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 1em;
+  font-family: 'Lato', sans-serif;
+  line-height: 36px;
+  font-size: 16px;
+}
+
+.contentContainer{
+  width: 90%;
+  height: 90%;
+  padding: 2rem;
+  margin: 8rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.toDoForm-container{
+  margin: 5rem;
+  padding: 2em;
+}
+
+form{
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255,255,255,0.13);
+  border-radius: 10px;
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  padding: 50px 35px;
+}
+
+form *{
+  font-family: 'Lato',sans-serif;
+  color: #111;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+  padding: 1em;
+}
+
+form h3{
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+
+label, form button{
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+form textArea{
+  border: 2px solid #111;
+  min-width: 100%;
+}
+
+form button{
+  width: 40%;
+  padding: 1em;
+  border: 2px solid #111;
+  cursor: pointer;
+}
+
+input {
+  display: inline-block;
+  height: 50px;
+  width: 100%;
+  border: 2px solid #111;
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.displayToDo-container{
+  flex: 1;
+  margin: 2em;
+  padding: 1em;
+}
+.cardWrapper{
+  display: flex;
+  gap: 2em;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1em;
+  padding: 1em;
+}
+.toDoCard{
+  width: minmax(20%,20%);
+  height: minmax(25%,25%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border: 3px solid #111;
+  border-radius: 3px;
+}
+.toDoCard span {
+  float: right;
+  margin-top: 2px;
+}
+.toDoCard *{
+  margin: 0.5em;
+}
+
+.toDoCard h3 p1{
+  text-indent: 0%;
+  text-align: center;
+}
+.editBtn{
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-top: auto;
+  width: 100px;
+  height: 70px;
+  cursor: pointer;
+}
+.editCard{
+  display: none;
+}

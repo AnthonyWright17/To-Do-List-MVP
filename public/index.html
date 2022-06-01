@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"  href="index.css">
+  <script type="text/javascript" defer src="index.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="contentContainer">
+
+    <div class="toDoForm-container">
+      <form class="toDoForm">
+
+        <h3 class="toDoForm-header">Create to-do items</h3>
+
+        <label for="title">Title:</label>
+        <input type="text" name="title" placeholder="Name your task.....">
+
+        <label for="content">To-Do-Description</label>
+        <textarea name="content" placeholder="Short summary of task....."></textarea>
+
+        <button class="toDoFormBtn">Add Your Task</button>
+
+      </form>
+    </div>
+
+    <div class="displayToDo-container">
+      <div class="cardWrapper">
+
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="editCard">
+    <span class="editClose">&times;</span>
+    <form class="editForm">
+      <h3 class="toDoForm-header">Edit Post</h3>
+
+      <h5 class="editFormId"></h5>
+
+      <label for="title">Edit Title:</label>
+      <input type="text" name="title" placeholder="Edit title">
+
+      <label for="content">Edit Description</label>
+      <textarea name="content" placeholder="Change your description"></textarea>
+
+        <button class="editFormBtn">Update</button>
+    </form>
+  </div>
+  
+</body>
+
+</html>

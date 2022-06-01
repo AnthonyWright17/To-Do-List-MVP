@@ -1,0 +1,1 @@
+INSERT INTO todo (title, content) VALUES ('MVP', 'Create this Project by tomorrow!')
